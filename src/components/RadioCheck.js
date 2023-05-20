@@ -9,13 +9,13 @@ import {
 
 export default function RadioCheck(){
 	return <Box >
-	<Box sx={{ display: 'flex', justifyContent: 'center' }}>
+	<Box sx={{ display: 'flex', justifyContent: 'center', width: { xs: '100%', sm: '90%', md: '60%' }, margin: 'auto' }}>
 		<RadioGroup
 			row
 			aria-labelledby="demo-radio-buttons-group-label"
 			defaultValue="female"
 			name="radio-buttons-group"
-			style={style.Box} sx={{ width: { sm: '100%', md: '60%' } }}
+			style={style.Box}
 		>
 					<FormControlLabel style={style.FormControlLabel} value="Nyo" control={<Radio />} label="Nyo" />
 					<FormControlLabel style={style.FormControlLabel} value="Khin" control={<Radio />} label="Khin" />
@@ -33,6 +33,7 @@ export default function RadioCheck(){
 
 const style = {
 	Box: {
+		width: '100%',
 		display: 'flex',
 		justifyContent: 'space-between',
 		margin: '20px'
