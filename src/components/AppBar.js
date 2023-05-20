@@ -20,7 +20,7 @@ import {
 const pages = ['Home', 'Public Holiday'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-function ResponsiveAppBar() {
+function ResponsiveAppBar( {URL} ) {
 	const [anchorElNav, setAnchorElNav] = React.useState(null);
 	const [anchorElUser, setAnchorElUser] = React.useState(null);
 	const navigate = useNavigate();
@@ -42,9 +42,9 @@ function ResponsiveAppBar() {
 
 	const handleChangePage = (page) => {
 		if (page == "Home") {
-			navigate("/")
+			navigate(URL)
 		} else {
-			navigate("/public_holiday")
+			navigate(`${URL}/public_holiday`)
 		}
 		handleCloseNavMenu();
 	}

@@ -10,21 +10,23 @@ import Home from './Pages/Home';
 import PublicHoliday from './Pages/PublicHoliday';
 import { Box } from '@mui/material';
 
+const URL = "/mno_schedule_react";
+
 function App() {
 	return (
 		<Box>
-			<ResponsiveAppBar />
+			<ResponsiveAppBar URL={URL}/>
 			<RadioCheck />
 
 
 			<Routes>
 				<Route
-					path='/'
+					path={URL}
 					element={<Home />}
 				/>
 
 				<Route
-					path='/public_holiday'
+					path={`${URL}/public_holiday`}
 					element={<PublicHoliday />}
 				/>
 			</Routes>
