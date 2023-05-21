@@ -4,7 +4,10 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import { Box } from '@mui/material';
 
-export default function Home() {
+import { publicHolidays } from '../assets/PublicHoliday';
+import { getCookie, setCookie } from '../assets/CookieManage';
+
+export default function Home({ shiftEvents, calRef }) {
 	return (
 		<Box sx={{ marginTop: '10px', padding: '10px', maxWidth: '1500px', margin: '0 auto' }}>
 			<FullCalendar
@@ -20,8 +23,10 @@ export default function Home() {
 				selectable={false}
 				selectMirror={true}
 				dayMaxEvents={true}
+				events={[...publicHolidays, ...shiftEvents]}
+				ref={calRef}
 				// weekends={this.state.weekendsVisible}
-				// initialEvents={INITIAL_EVENTS} // alternatively, use the `events` setting to fetch from a feed
+				// initialEvents={[...publicHolidays, ...shiftEvents]} // alternatively, use the `events` setting to fetch from a feed
 				// select={this.handleDateSelect}
 				// eventContent={renderEventContent} // custom render function
 				// eventClick={this.handleEventClick}

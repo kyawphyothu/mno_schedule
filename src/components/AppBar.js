@@ -11,7 +11,6 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import EventRoundedIcon from '@mui/icons-material/EventRounded';
 import {
 	useNavigate
@@ -41,7 +40,7 @@ function ResponsiveAppBar( {URL} ) {
 	};
 
 	const handleChangePage = (page) => {
-		if (page == "Home") {
+		if (page === "Home") {
 			navigate(URL)
 		} else {
 			navigate(`${URL}/public_holiday`)
@@ -161,9 +160,9 @@ function ResponsiveAppBar( {URL} ) {
 					</Box>
 
 					<Box sx={{ flexGrow: 0 }}>
-						<Tooltip title='Open settings'>
+						<Tooltip title=''>
 							<IconButton
-								onClick={handleOpenUserMenu}
+								// onClick={handleOpenUserMenu}
 								sx={{ p: 0 }}
 							>
 								<Avatar
