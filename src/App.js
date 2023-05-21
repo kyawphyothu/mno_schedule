@@ -15,7 +15,7 @@ import Home from './Pages/Home';
 import { getCookie, removeCookie } from './assets/CookieManage';
 import { handleShiftEvents } from './assets/ShiftEvent';
 
-const URL = "/mno_schedule_react";
+const URL = "/mno_schedule";
 
 
 export default function App() {
