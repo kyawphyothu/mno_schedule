@@ -1,4 +1,5 @@
 {
+	"homepage": "https://kyawphyothu.github.io/mno_schedule",
 	"name": "mno_schedule",
 	"version": "0.1.0",
 	"private": true,
@@ -50,6 +51,7 @@
 		]
 	},
 	"devDependencies": {
+		"dotenv": "^16.0.3",
 		"gh-pages": "^5.0.0"
 	}
 }
