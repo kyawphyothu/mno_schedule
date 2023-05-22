@@ -127,7 +127,7 @@ export default function PublicHoliday({ shiftEvents }) {
 							<TableCell align='right'>Morning 5.5h</TableCell>
 							<TableCell align='right'>Evening 5.5h</TableCell>
 							<TableCell align='right'>OT</TableCell>
-							<TableCell align='right'>Monhly(OT)</TableCell>
+							<TableCell align='right'>Monthly(OT)</TableCell>
 						</TableRow>
 					</TableHead>
 					<TableBody>
