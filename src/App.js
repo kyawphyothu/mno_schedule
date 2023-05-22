@@ -16,7 +16,7 @@ import { getCookie } from './assets/CookieManage';
 import { handleShiftEvents } from './assets/ShiftEvent';
 
 // const URL = process.env.REACT_APP_URL;
-const URL = "/mno_schedule/";
+const URL = "/";
 
 
 export default function App() {
