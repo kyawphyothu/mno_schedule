@@ -47,10 +47,10 @@ export default function App() {
 			/>
 
 			<Routes>
-				<Route
+				{/* <Route
 					path='/'
 					element={ <Navigate to={URL} /> }
-				/>
+				/> */}
 
 				<Route
 					path={URL}
