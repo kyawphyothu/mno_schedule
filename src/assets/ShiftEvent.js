@@ -18,8 +18,6 @@ export function handleShiftEvents(groups) {
 	const restDuration = 2 * 24 * 60 * 60 * 1000; // 2 days
 	const nightShiftDuration = 2 * 24 * 60 * 60 * 1000; // 2 days
 
-	const separateDay = 1 * 24 * 60 * 60 * 1000; // 1 days
-
 	// Define the total duration of the event in milliseconds
 	const totalDuration = 8 * 24 * 60 * 60 * 1000;
 

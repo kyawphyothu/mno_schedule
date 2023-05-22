@@ -5,7 +5,6 @@ import timeGridPlugin from '@fullcalendar/timegrid'
 import { Box } from '@mui/material';
 
 import { publicHolidays } from '../assets/PublicHoliday';
-import { getCookie, setCookie } from '../assets/CookieManage';
 
 export default function Home({ shiftEvents, calRef }) {
 	return (

@@ -3,7 +3,7 @@ import {
 	Route,
 	Navigate
 } from 'react-router-dom';
-import { Box, Container } from '@mui/material';
+import { Box } from '@mui/material';
 import { useEffect, useMemo, useRef, useState } from 'react';
 
 import ResponsiveAppBar from './components/AppBar';
@@ -12,7 +12,7 @@ import RadioCheck from './components/RadioCheck';
 import PublicHoliday from './Pages/PublicHoliday';
 import Home from './Pages/Home';
 
-import { getCookie, removeCookie } from './assets/CookieManage';
+import { getCookie } from './assets/CookieManage';
 import { handleShiftEvents } from './assets/ShiftEvent';
 
 const URL = "/mno_schedule";
