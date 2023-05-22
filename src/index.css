@@ -11,3 +11,7 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
 }
+
+.fc-day-today{
+	background-color: #d99d50e0 !important;
+}
