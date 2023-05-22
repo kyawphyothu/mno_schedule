@@ -43,7 +43,7 @@ function ResponsiveAppBar( {URL} ) {
 		if (page === "Home") {
 			navigate(URL)
 		} else {
-			navigate(`${URL}/public_holiday`)
+			navigate(`${URL}public_holiday`)
 		}
 		handleCloseNavMenu();
 	}

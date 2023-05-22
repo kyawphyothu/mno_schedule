@@ -58,7 +58,7 @@ export default function App() {
 				/>
 
 				<Route
-					path={`${URL}/public_holiday`}
+					path={`${URL}public_holiday`}
 					element={<PublicHoliday shiftEvents={shiftEvents} />}
 				/>
 			</Routes>
