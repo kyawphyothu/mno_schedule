@@ -59,7 +59,7 @@ function ResponsiveAppBar( {URL} ) {
 						variant='h6'
 						noWrap
 						component='a'
-						href='/'
+						href={ URL }
 						sx={{
 							mr: 2,
 							display: { xs: 'none', md: 'flex' },
