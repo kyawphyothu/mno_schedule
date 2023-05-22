@@ -15,7 +15,7 @@ import Home from './Pages/Home';
 import { getCookie } from './assets/CookieManage';
 import { handleShiftEvents } from './assets/ShiftEvent';
 
-const URL = "/mno_schedule";
+const URL = "/";
 
 
 export default function App() {
