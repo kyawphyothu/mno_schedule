@@ -3,7 +3,7 @@ import {
 	Route,
 	Navigate
 } from 'react-router-dom';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { useEffect, useMemo, useRef, useState } from 'react';
 
 import ResponsiveAppBar from './components/AppBar';
@@ -63,6 +63,7 @@ export default function App() {
 					element={<PublicHoliday shiftEvents={shiftEvents} />}
 				/>
 			</Routes>
+			<Typography sx={{ color: 'red' }}>Mobileတွင် စာများပြူး၍ သေချာမမြင်ရပါက Browser၏ အထက်မှအစက်သုံးစက်ကိုနှိပ်ပါ။ ထိုထဲတွင် Desktop Site ကိုအမှန်ချစ်ပေးပါ။</Typography>
 		</Box>
 	);
 }
