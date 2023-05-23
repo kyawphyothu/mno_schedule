@@ -47,7 +47,7 @@ export default function PublicHoliday({ shiftEvents }) {
 									color: 'green',
 									date: h.start,
 									month: new Date(h.start).getMonth(),
-									ot: 1,
+									ot: 11,
 								});
 							}
 							break;
@@ -60,10 +60,10 @@ export default function PublicHoliday({ shiftEvents }) {
 								month: new Date(h.start).getMonth(),
 								ot:
 									h.start === s.start || h.start === s.end
-										? 0.5
+										? 5.5
 										: s.start < h.start && h.start < s.end
-										? 1
-										: 0,
+										? 11
+										: 5.5,
 								fl:
 									h.start === s.start
 										? 'last'
@@ -290,7 +290,7 @@ export default function PublicHoliday({ shiftEvents }) {
 													tableData.forEach((td) => {
 														result += td.ot;
 													});
-													return result+" Days";
+													return result+" Hours";
 												})()}
 											</TableCell>
 										</TableRow>
